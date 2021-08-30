@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "KSNU_Popremover",
+    "version": "1.0",
+    "description": "군산대 이클래스 팝업 제거기",
+    
+    "browser_action": {
+        "default_popup": "main.html"
+    },
+	"content_scripts": [{
+		"all_frames": true,
+		"matches": ["*://eclass.kunsan.ac.kr/*"],
+		"run_at": "document_start",
+		"js": ["function.js"]
+	}]
+}
