@@ -5,6 +5,7 @@
     "description": "군산대 이클래스 팝업 제거기",
     
     "browser_action": {
+		"default_icon": "main.jpg",
         "default_popup": "main.html"
     },
 	"content_scripts": [{
