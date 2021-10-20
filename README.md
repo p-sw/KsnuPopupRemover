@@ -13,5 +13,7 @@
 5. 압축 해제한 폴더 선택
 6. 아래 스크린샷처럼 "설치된 확장" 목록과 주소창 우측에 아이콘이 추가되었다면 설치 완료
 
+만약 정상 작동하지 않을시 
+"설치된 확장" => KSNU_Popremove => "세부 정보" => "InPrivate에서 허용" 체크 => 브라우저 재시작
+
 ![1](https://user-images.githubusercontent.com/75349747/131472983-3403cc72-8c68-47ca-892f-34463f015f65.PNG)
-![2](https://user-images.githubusercontent.com/75349747/131473429-7a2b9622-ac0a-428f-af36-e4612cfe40ba.PNG)
