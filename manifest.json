@@ -3,7 +3,7 @@
 	"name": "KsnuPopupRemover",
 	"version": "1.2",
 	"description": "군산대학교 E-Class 팝업 리무버",
-	"browser_action": {
+	"action": {
 		"default_icon": "ksnu_logo.png",
 		"default_popup": "extension_popup.html"
 	},
