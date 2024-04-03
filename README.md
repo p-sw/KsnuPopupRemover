@@ -11,7 +11,7 @@
 
 ## 설치 및 활성화 방법 (MS Edge 기준)
 
-1. [최신 버전](https://github.com/p-sw/KsnuPopupRemover/releases/tag/v.1.3-alpha)의 소스 파일(.zip) 다운로드 및 압축 해제
+1. [최신 릴리즈 버전](https://github.com/p-sw/KsnuPopupRemover/releases/tag/v.1.3-alpha)의 소스 파일(.zip) 다운로드 및 압축 해제
 2. Edge 우측 상단의 "..." 클릭 => "확장" 클릭
 3. 좌측 하단의 "개발자 모드" 활성화
 4. "설치된 확장"에서 "압축 풀린 파일 로드" 클릭
@@ -20,6 +20,17 @@
 
 ### 정상 작동하지 않을 경우
 "설치된 확장" => KsnuPopupRemover => "세부 정보" => "InPrivate에서 허용" 체크 => 브라우저 재시작
+
+### 테스트되지 않은 최신 버전 설치
+
+**주의:** 테스트되지 않은 최신 버전의 경우 의도되지 않은 버그나 오류가 생길 수 있습니다.
+
+1. [테스트되지 않은 최신 버전](https://github.com/p-sw/KsnuPopupRemover/archive/refs/heads/main.zip) (.zip) 다운로드 및 압축 해제
+2. Edge 우측 상단의 "..." 클릭 => "확장" 클릭
+3. 좌측 하단의 "개발자 모드" 활성화
+4. "설치된 확장"에서 "압축 풀린 파일 로드" 클릭
+5. 압축 해제한 폴더 선택
+6. 아래 스크린샷처럼 "설치된 확장" 목록과 주소창 우측에 아이콘이 추가되었다면 설치 완료
 
 ## 스크린샷
 
