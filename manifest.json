@@ -9,7 +9,7 @@
 	},
 	"content_scripts": [{
 		"all_frames": true,
-		"matches": ["*://eclass.kunsan.ac.kr/Lesson.do*"],
+		"matches": ["*://eclass.kunsan.ac.kr/Lesson.do?cmd=viewStudyContentsForm*"],
 		"run_at": "document_end",
 		"js": ["clicker.js"]
 	}]
