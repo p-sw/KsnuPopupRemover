@@ -1,7 +1,9 @@
 setTimeout(function() {
-	var lecture_btn = document.querySelectorAll('.popupLayer > .footer > ul > li > a');
+	var lecture_btn = document.querySelector('body > form > div > div.footer > ul > li > a');
+	console.log("lecture_btn:", lecture_btn);
 	if (typeof(lecture_btn[0]) !== "undefined") { 
-		lecture_btn[0].click();
+		lecture_btn.click();
+		console.log("Click triggered!");
 	}
 }, 
 500
