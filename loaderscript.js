@@ -1,5 +1,5 @@
 var __ksnupopupremover;
-var __ksnuGlobalScopeEval = (s) => eval.apply(this, s);
+var __ksnuGlobalScopeEval = (s) => eval.apply(this, [s]);
 (
   () => {
     console.log("Loading program...");
