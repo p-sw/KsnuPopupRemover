@@ -1,5 +1,5 @@
 var __ksnupopupremover;
-var __ksnuGlobalScopeEval = (s) => eval.apply(this, [s]);
+var stopPopupRemover;
 (
   () => {
     console.log("Loading program...");
@@ -14,29 +14,25 @@ var __ksnuGlobalScopeEval = (s) => eval.apply(this, [s]);
       .then(
         (code) => {
           console.log("Injecting to page..")
-          __ksnuGlobalScopeEval(code);
+          eval(code);
           console.log("Injection completed");
-        }
-      )
-      .then(
-        () => {
           console.log("Running program...");
           __ksnupopupremover = new PopupRemover();
           __ksnupopupremover.start();
           console.log("Started program");
+          stopPopupRemover = () => {
+            if (!__ksnupopupremover || !__ksnupopupremover || !__ksnupopupremover.interval) {
+              console.log("Popup remover is not started");
+              return;
+            }
+            __ksnupopupremover.stop()
+          }
         }
       )
       .catch(
         (err) => {
-          console.log(err.toString());
+          throw err;
         }
       );
   }
 )()
-
-function stopPopupRemover() {
-  if (!__ksnupopupremover || !__ksnupopupremover || !__ksnupopupremover.interval) {
-    console.log("Popup remover is not started")
-  }
-  __ksnupopupremover.stop()
-}
