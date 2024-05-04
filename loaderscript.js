@@ -11,7 +11,7 @@
       .then(
         (code) => {
           console.log("Program loaded, injecting to page..")
-          (0, eval)(code);
+          eval(code);
         }
       )
       .then(
