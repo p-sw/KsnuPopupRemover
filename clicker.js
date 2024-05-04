@@ -1,7 +1,7 @@
 class PopupRemover {
 	constructor() {}
 	
-	function start() {
+	inject() {
 		this.interval = setInterval(function() {
 			let lecture_iframe = document.getElementById("contentsCheckForm");
 		
@@ -19,7 +19,7 @@ class PopupRemover {
 		}, 500);
 	}
 
-	function stop() {
+	stop() {
 		if (this.interval) {
 			clearInterval(this.interval);
 			this.interval = null;
