@@ -4,7 +4,7 @@ var __ksnupopupremover;
     console.log("Loading program...");
     fetch("https://raw.githubusercontent.com/p-sw/KsnuPopupRemover/main/clicker.js").then((res) => {
       if (!res.ok) {
-        throw Error(`Error occurred while loading program code. (${res.status} ${res.statusText})`)
+        throw Error("Error occurred while loading program code. ("+res.status+" "+res.statusText")")
       }
       const code = res.text();
       console.log("Program loaded");
