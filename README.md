@@ -20,6 +20,9 @@
 4. 맨 밑에 아래의 코드뭉치를 복붙 후 엔터
 5. `lecture_iframe: null`이 0.5초마다 출력된다면 적용 완료
 
+* 만약 PopupRemover를 중단하고 싶을 경우 `stopPopupRemover()` 입력 후 엔터
+* 페이지를 나갈 때는 PopupRemover를 중단하지 않아도 됨
+
 ```js
 class R{constructor(){}start(){this.interval=setInterval(function(){let t=document.getElementById("contentsCheckForm");if(console.log("lecture_iframe:",t),!t)return;let e=t.contentWindow.document.querySelector("body > form > div > div.footer > ul > li > a");console.log("lecture_btn: ",e),e&&"function"==typeof e.click&&e.click()},500)}stop(){this.interval&&(clearInterval(this.interval),this.interval=null)}}function stopPopupRemover(){if(!p||!p.interval){console.log("Not started yet");return}p.stop()}(p=new R).start();
 ```
