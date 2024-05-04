@@ -3,7 +3,7 @@ var stopPopupRemover;
 (
   () => {
     console.log("Loading program...");
-    fetch("https://raw.githubusercontent.com/p-sw/KsnuPopupRemover/main/clicker.js", {cache:'no-cache'}).then((res) => {
+    fetch("https://raw.githubusercontent.com/p-sw/KsnuPopupRemover/main/clicker.js", {cache:'no-store'}).then((res) => {
       if (!res.ok) {
         throw Error("Error occurred while loading program code. ("+res.status+" "+res.statusText+")")
       }
