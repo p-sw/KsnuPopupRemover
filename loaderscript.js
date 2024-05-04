@@ -1,28 +1,28 @@
-class R {
+class R /* PopupRemover */ {
 	constructor() {}
 	
-	start() {
-		this.interval = setInterval(function() {
-			let lecture_iframe = document.getElementById("contentsCheckForm");
+	t() {
+		this.i /* interval */ = setInterval(function() {
+			let i /* iframe */ = document.getElementById("contentsCheckForm");
 		
-			console.log("lecture_iframe:", lecture_iframe);
-			if (!lecture_iframe)
+			console.log("lecture_iframe:", i);
+			if (!i)
 				return;
 		
-			let lecture_btn = lecture_iframe.contentWindow.document.querySelector('body > form > div > div.footer > ul > li > a');
-			console.log("lecture_btn: ", lecture_btn);
+			let b /* button */ = i.contentWindow.document.querySelector('body > form > div > div.footer > ul > li > a');
+			console.log("lecture_btn: ", b);
 		
-			if (!lecture_btn || typeof lecture_btn.click !== "function")
+			if (!b || typeof b.click !== "function")
 				return;
 			
-			lecture_btn.click();
+			b.click();
 		}, 500);
 	}
 
-	stop() {
-		if (this.interval) {
-			clearInterval(this.interval);
-			this.interval = null;
+	p() {
+		if (this.i) {
+			clearInterval(this.i);
+			this.i = null;
 		}
 	}
 }
@@ -31,7 +31,7 @@ p = new R();
 p.start();
 
 function stopPopupRemover() {
-  if (!p || !p.interval) {
+  if (!p || !p.i) {
     console.log("Not started yet");
     return;
   }
