@@ -1,3 +1,4 @@
+var __ksnupopupremover;
 (
   () => {
     console.log("Loading program...");
@@ -5,15 +6,23 @@
       if (!res.ok) {
         throw Error(`Error occurred while loading program code. (${res.status} ${res.statusText})`)
       }
-
-      return res.text();
+      const code = res.text();
+      console.log("Program loaded");
+      return code;
     })
       .then(
         (code) => {
-          console.log("Program loaded, injecting to page..")
+          console.log("Injecting to page..")
           eval(code);
-          console.log("Injection complete, running program...");
-          loadPopupRemover();
+          __ksnupopupremover = new PopupRemover();
+          console.log("Injection completed");
+        }
+      )
+      .then(
+        () => {
+          console.log("Running program...");
+          __ksnupopupremover.start();
+          console.log("Started program");
         }
       )
       .catch(
@@ -23,3 +32,10 @@
       );
   }
 )()
+
+function stopPopupRemover() {
+  if (!__ksnupopupremover || !__ksnupopupremover || !__ksnupopupremover.interval) {
+    console.log("Popup remover is not started")
+  }
+  __ksnupopupremover.stop()
+}
