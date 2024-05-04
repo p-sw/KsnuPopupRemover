@@ -12,10 +12,6 @@
         (code) => {
           console.log("Program loaded, injecting to page..")
           eval(code);
-        }
-      )
-      .then(
-        (code) => {
           console.log("Injection complete, running program...");
           loadPopupRemover();
         }
