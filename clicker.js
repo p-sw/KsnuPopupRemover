@@ -20,6 +20,7 @@ class PopupRemover {
 	function stop() {
 		if (this.interval) {
 			clearInterval(this.interval);
+			this.interval = null;
 		}
 	}
 }
