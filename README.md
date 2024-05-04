@@ -26,6 +26,7 @@
 ```js
 class R{constructor(){}start(){this.interval=setInterval(function(){let t=document.getElementById("contentsCheckForm");if(console.log("lecture_iframe:",t),!t)return;let e=t.contentWindow.document.querySelector("body > form > div > div.footer > ul > li > a");console.log("lecture_btn: ",e),e&&"function"==typeof e.click&&e.click()},500)}stop(){this.interval&&(clearInterval(this.interval),this.interval=null)}}function stopPopupRemover(){if(!p||!p.interval){console.log("Not started yet");return}p.stop()}(p=new R).start();
 ```
+**정상 작동을 확인했습니다.**
 
 Minify되지 않은 코드는 [여기](https://github.com/p-sw/KsnuPopupRemover/blob/main/loaderscript.js)에서 보실 수 있습니다. (loaderscript.js)
 
