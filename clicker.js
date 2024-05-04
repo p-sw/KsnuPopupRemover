@@ -1,4 +1,4 @@
-class PopupRemover() 
+class PopupRemover {
 	function start() {
 		this.interval = setInterval(function() {
 			let lecture_iframe = document.getElementById("contentsCheckForm");
