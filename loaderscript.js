@@ -1,4 +1,5 @@
 var __ksnupopupremover;
+var __ksnuGlobalScopeEval = (s) => eval.apply(this, s);
 (
   () => {
     console.log("Loading program...");
@@ -13,14 +14,14 @@ var __ksnupopupremover;
       .then(
         (code) => {
           console.log("Injecting to page..")
-          eval(code);
-          __ksnupopupremover = new PopupRemover();
+          __ksnuGlobalScopeEval(code);
           console.log("Injection completed");
         }
       )
       .then(
         () => {
           console.log("Running program...");
+          __ksnupopupremover = new PopupRemover();
           __ksnupopupremover.start();
           console.log("Started program");
         }
