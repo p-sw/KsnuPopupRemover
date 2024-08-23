@@ -5,33 +5,37 @@
 ## 알림
 * [원본 레포지토리](https://github.com/antibiotics11/KsnuPopupRemover)의 유지 보수가 중단됨에 따라 유지보수가 지속될 수 있도록 새롭게 만든 레포지토리입니다.
 * 24학번에 의해 유지보수되고 있습니다.
-* **브라우저 확장 프로그램 방식은 크롬 Manifest V2의 지원이 끊김에 따라 성공적으로 Manifest V3에서 작동시킬 방법을 찾을 때까지 쓸 수 없게 될 예정입니다. 대신 스크립트 방식으로 활성화시킬 수 있습니다.**
-
-**원본 레포지토리 유지보수 중단 알림**
-> 2023년 7월 1일 기준으로 Ungoogled Chromium과 Firefox에서 정상 작동을 확인했으나, 본인이 졸업함에 따라 v1.2를 최종 버전으로 추후 업데이트는 제공되지 않습니다.
 
 ## 스크립트 활성화 방법
 
-### (권장) 자동 실행 방식
+<details>
+  <summary><h3>(권장) 자동 실행 방식</h3></summary>
 
-1. Tampermonkey 확장 프로그램 설치
-  * 크로미움 기반 브라우저 (구글 크롬, 엣지, 네이버 웨일, 비발디, 아크, 오페라, 브레이브 등) - [여기에서 설치](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
-  * 파이어폭스 기반 브라우저 (파이어폭스, 플룹, 젠 등) - [여기에서 설치](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/) 
-2. [여기](https://github.com/p-sw/KsnuPopupRemover/raw/main/kpr.user.js)를 클릭해 자동 스크립트 설치
-3. 적용 완료
+  <ol>
+   <li>Tampermonkey 확장 프로그램 설치</li>
+    <ul><li>크로미움 기반 브라우저 (구글 크롬, 엣지, 네이버 웨일, 비발디, 아크, 오페라, 브레이브 등) - <a href="https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo">여기에서 설치</a></li>
+    <li>파이어폭스 기반 브라우저 (파이어폭스, 플룹, 젠 등) - <a href="https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/">여기에서 설치</a></li></ul> 
+  <li><a href="https://github.com/p-sw/KsnuPopupRemover/raw/main/kpr.user.js">여기</a>를 클릭해 자동 스크립트 설치</li>
+  <li>적용 완료</li>
+  </ol>
+
+</details>
 
 위 방식이 제대로 동작하지 않을 경우 아래 수동 실행 방식을 사용하여 수동으로 실행해주세요.
 
-### 수동 실행 방식
-
-1. 강의 학습 페이지 접속 (학습하기 클릭 후 뜨는 팝업 페이지)
-2. `Ctrl(컨트롤)` + `Shift(시프트)` + `I` 클릭 -> 개발자 도구
-3. 상단 탭에서 `Element` 옆의 `Console` 탭 클릭
-4. 맨 밑에 아래의 코드뭉치를 복붙 후 엔터
-5. `lecture_iframe: null`이 0.5초마다 출력된다면 적용 완료
-
-* 만약 PopupRemover를 중단하고 싶을 경우 `stopPopupRemover()` 입력 후 엔터
-* 페이지를 나갈 때는 PopupRemover를 중단하지 않아도 됨
+<details>
+ <summary><h3>수동 실행 방식</h3></summary>
+ <ol>
+  <li>강의 학습 페이지 접속 (학습하기 클릭 후 뜨는 팝업 페이지)</li>
+  <li><code>Ctrl(컨트롤)</code> + <code>Shift(시프트)</code> + <code>I</code> 클릭 -> 개발자 도구 열림</li>
+  <li>상단 탭에서 <code>Element</code> 옆의 <code>Console</code> 탭 클릭</li>
+  <li>맨 밑에 아래의 코드뭉치를 복붙 후 엔터</li>
+  <li><code>lecture_iframe: null</code>이 0.5초마다 출력된다면 적용 완료</li>
+ </ol>
+ <ul>
+  <li>만약 PopupRemover를 중단하고 싶을 경우 <code>stopPopupRemover()</code> 입력 후 엔터</li>
+  <li>페이지를 나갈 때는 PopupRemover를 중단하지 않아도 됨</li>
+ </ul>
 
 ```js
 class R{constructor(){}start(){this.interval=setInterval(function(){let t=document.getElementById("contentsCheckForm");if(console.log("lecture_iframe:",t),!t)return;let e=t.contentWindow.document.querySelector("body > form > div > div.footer > ul > li > a");console.log("lecture_btn: ",e),e&&"function"==typeof e.click&&e.click()},500)}stop(){this.interval&&(clearInterval(this.interval),this.interval=null)}}function stopPopupRemover(){if(!p||!p.interval){console.log("Not started yet");return}p.stop()}(p=new R).start();
@@ -39,6 +43,8 @@ class R{constructor(){}start(){this.interval=setInterval(function(){let t=docume
 **정상 작동을 확인했습니다.**
 
 Minify되지 않은 코드는 [여기](https://github.com/p-sw/KsnuPopupRemover/blob/main/loaderscript.js)에서 보실 수 있습니다. (loaderscript.js)
+ 
+</details>
 
 <!--
 ## ~~설치 및 활성화 방법 (MS Edge 기준)~~
