@@ -12,7 +12,17 @@
 
 ## 스크립트 활성화 방법
 
-**브라우저 확장 프로그램 방식은 크롬 Manifest V2의 지원이 끊김에 따라 성공적으로 Manifest V3로 업데이트될 때까지 사용하실 수 없습니다. 대신, 이 방식으로 활성화 시켜주세요.**
+### (권장) 자동 실행 방식
+
+1. Tampermonkey 확장 프로그램 설치
+  * 크로미움 기반 브라우저 (구글 크롬, 엣지, 네이버 웨일, 비발디, 아크, 오페라, 브레이브 등) - [여기에서 설치](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+  * 파이어폭스 기반 브라우저 (파이어폭스, 플룹, 젠 등) - [여기에서 설치](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/) 
+2. [여기](https://github.com/p-sw/KsnuPopupRemover/raw/main/kpr.user.js)를 클릭해 자동 스크립트 설치
+3. 적용 완료
+
+위 방식이 제대로 동작하지 않을 경우 아래 수동 실행 방식을 사용하여 수동으로 실행해주세요.
+
+## 수동 실행 방식
 
 1. 강의 학습 페이지 접속 (학습하기 클릭 후 뜨는 팝업 페이지)
 2. `Ctrl(컨트롤)` + `Shift(시프트)` + `I` 클릭 -> 개발자 도구
@@ -30,6 +40,7 @@ class R{constructor(){}start(){this.interval=setInterval(function(){let t=docume
 
 Minify되지 않은 코드는 [여기](https://github.com/p-sw/KsnuPopupRemover/blob/main/loaderscript.js)에서 보실 수 있습니다. (loaderscript.js)
 
+<!--
 ## ~~설치 및 활성화 방법 (MS Edge 기준)~~
 
 1. [최신 릴리즈 버전](https://github.com/p-sw/KsnuPopupRemover/releases/tag/v.1.3-alpha)의 소스 파일(.zip) 다운로드 및 압축 해제
@@ -57,6 +68,7 @@ Minify되지 않은 코드는 [여기](https://github.com/p-sw/KsnuPopupRemover/
 
 ![1](https://user-images.githubusercontent.com/75349747/131472983-3403cc72-8c68-47ca-892f-34463f015f65.PNG)
 ![2](https://user-images.githubusercontent.com/75349747/138016726-bbedb7dc-02ea-4384-b3f3-40fd27142f3c.png)
+-->
 
 ## 오류/버그 제보 및 기여
 
