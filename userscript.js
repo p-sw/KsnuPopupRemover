@@ -5,7 +5,6 @@
 // @description  Remove popup of Kunsan National University web lecture
 // @author       Shinwoo PARK
 // @match        https://eclass.kunsan.ac.kr/Lesson.do?cmd=viewStudyContentsForm*
-// @icon         https://github.com/p-sw/KsnuPopupRemover/blob/088844fc66073bf88930b7e39bbf40b8ff87a8b8/ksnu_logo.png
 // @grant        none
 // ==/UserScript==
 
