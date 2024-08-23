@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         KsnuPopupRemover
-// @namespace    https://github.com/p-sw/KsnuPopupRemover
+// @namespace    http://tampermonkey.net/
 // @version      2024-08-23
 // @description  Remove popup of Kunsan National University web lecture
 // @author       Shinwoo PARK
