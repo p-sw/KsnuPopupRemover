@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         KsnuPopupRemover
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/p-sw/KsnuPopupRemover
 // @version      2024-08-23
 // @description  Remove popup of Kunsan National University web lecture
 // @author       Shinwoo PARK
 // @match        https://eclass.kunsan.ac.kr/Lesson.do?cmd=viewStudyContentsForm*
+// @icon         https://github.com/p-sw/KsnuPopupRemover/blob/b03f854502aae229bc481223767f5a6506a25c3b/ksnu_logo.png
 // @grant        none
 // ==/UserScript==
 
