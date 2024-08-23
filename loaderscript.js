@@ -1,7 +1,7 @@
 class R /* PopupRemover */ {
 	constructor() {}
 	
-	t() {
+	start() {
 		this.i /* interval */ = setInterval(function() {
 			let i /* iframe */ = document.getElementById("contentsCheckForm");
 		
@@ -19,7 +19,7 @@ class R /* PopupRemover */ {
 		}, 500);
 	}
 
-	p() {
+	stop() {
 		if (this.i) {
 			clearInterval(this.i);
 			this.i = null;
