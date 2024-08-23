@@ -34,5 +34,5 @@ class R /* PopupRemover */ {
 (function() {
     'use strict';
 
-    (new R()).start();
+    (new R()).t();
 })();
