@@ -7,6 +7,7 @@
 * 24학번에 의해 유지보수되고 있습니다.
 
 * 9/2, 파이어폭스 기반 브라우저에서 정상 작동을 확인했습니다.
+* 9/2, 크로미움 기반 브라우저에서 정상 작동을 확인했습니다.
 
 ## 스크립트 활성화 방법
 
@@ -17,8 +18,19 @@
    <li>Tampermonkey 확장 프로그램 설치</li>
     <ul><li>크로미움 기반 브라우저 (구글 크롬, 엣지, 네이버 웨일, 비발디, 아크, 오페라, 브레이브 등) - <a href="https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo">여기에서 설치</a></li>
     <li>파이어폭스 기반 브라우저 (파이어폭스, 플룹, 젠 등) - <a href="https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/">여기에서 설치</a></li></ul> 
-  <li><a href="https://github.com/p-sw/KsnuPopupRemover/raw/main/kpr.user.js">여기</a>를 클릭해 자동 스크립트 설치</li>
-  <li>적용 완료</li>
+    <li><a href="https://github.com/p-sw/KsnuPopupRemover/raw/main/kpr.user.js">여기</a>를 클릭해 자동 스크립트 설치</li>
+    <li>크로미움 기반 브라우저일 경우 개발자 모드를 활성화 해야 합니다.<br/>
+      <blockquote>
+        Developer Mode is necessary due to the two-step user authorization for userscripts: the <code>userScripts</code> permission and the Developer Mode option. The <code>userScripts</code> permission, on its own, does not trigger a user warning upon installation. So this additional step likely reflects Google's intention to ensure that users are making an informed decision to run extensions that use Userscripts.
+      </blockquote>
+      개발자 모드를 활성화 하는 방법은 다음과 같습니다.
+      <ol>
+        <li>새 브라우저 창에서 <code>chrome://extensions</code> 또는 <code>edge://extensions</code>를 입력해 확장 프로그램 페이지로 이동하세요.</li>
+        <li>오른쪽 상단의 "개발자 모드"를 활성화하세요.</li>
+        <li>브라우저를 재시작하세요.</li>
+      </ol>
+    </li>
+    <li>적용 완료</li>
   </ol>
 
 </details>
