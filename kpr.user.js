@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         KsnuPopupRemover
 // @namespace    https://github.com/p-sw/KsnuPopupRemover
-// @version      2024-08-23
+// @version      2024-09-02
 // @description  Remove popup of Kunsan National University web lecture
 // @author       Shinwoo PARK
 // @match        https://eclass.kunsan.ac.kr/Lesson.do?cmd=viewStudyContentsForm*
@@ -28,7 +28,7 @@
 
 		p() {
       if (this.i) clearInterval(this.i);
-      this.i = null;}
+      this.i = null;
     }
   }
 
