@@ -15,6 +15,7 @@
   class R /* PopupRemover */ {
     constructor() {}
     t() {
+      alert("KsnuPopupRemover Successfully Started!");
       this.i /* interval */ = setInterval(function() {
         let i /* iframe */ = document.getElementById("contentsCheckForm");
         console.log("lecture_iframe:", i);
