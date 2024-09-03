@@ -2,7 +2,7 @@
 
 군산대학교 이클래스에서 온라인 강의시 나타나는 진행확인 팝업을 자동으로 클릭하는 브라우저 확장 스크립트입니다.
 
-[확장 프로그램 설정 페이지](https://p-sw.github.io/KsnuPopupRemover/extpage) - 스크립트가 설치 및 활성화된 상태로 접속해야 정상 작동합니다.
+[확장 프로그램 설정 페이지](https://p-sw.github.io/KsnuPopupRemover/extpage) - 스크립트가 설치 및 활성화된 상태로 접속해야 페이지가 정상적으로 로드됩니다.
 
 ## 알림
 * [원본 레포지토리](https://github.com/antibiotics11/KsnuPopupRemover)의 유지 보수가 중단됨에 따라 유지보수가 지속될 수 있도록 새롭게 만든 레포지토리입니다.
