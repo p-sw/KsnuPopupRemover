@@ -13,7 +13,7 @@
 
 ## 스크립트 활성화 방법
 
-<details>
+<details open>
   <summary><h3>(권장) 자동 실행 방식</h3></summary>
 
   <ol>
