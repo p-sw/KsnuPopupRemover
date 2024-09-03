@@ -6,8 +6,8 @@
 * [원본 레포지토리](https://github.com/antibiotics11/KsnuPopupRemover)의 유지 보수가 중단됨에 따라 유지보수가 지속될 수 있도록 새롭게 만든 레포지토리입니다.
 * 24학번에 의해 유지보수되고 있습니다.
 
-* 9/2, 파이어폭스 기반 브라우저에서 정상 작동을 확인했습니다.
-* 9/2, 크로미움 기반 브라우저에서 정상 작동을 확인했습니다.
+* 2024/09/02, 파이어폭스 기반 브라우저에서 정상 작동을 확인했습니다.
+* 2024/09/02, 크로미움 기반 브라우저에서 정상 작동을 확인했습니다.
 
 ## 스크립트 활성화 방법
 
@@ -17,7 +17,7 @@
   <ol>
    <li>Tampermonkey 확장 프로그램 설치</li>
     <ul><li>크로미움 기반 브라우저 (구글 크롬, 엣지, 네이버 웨일, 비발디, 아크, 오페라, 브레이브 등) - <a href="https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo">여기에서 설치</a></li>
-    <li>파이어폭스 기반 브라우저 (파이어폭스, 플룹, 젠 등) - <a href="https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/">여기에서 설치</a></li></ul> 
+    <li>파이어폭스 기반 브라우저 (파이어폭스, 플룹, 젠 등) - <a href="https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/">여기에서 설치</a></li><li>어떤 브라우저인지 모르시겠다면 둘 다 들어가보세요. 호환되는 브라우저가 아니라면 설치 버튼이 비활성화되어 있거나 설치가 진행되지 않습니다.</li></li></ul>
     <li><a href="https://github.com/p-sw/KsnuPopupRemover/raw/main/kpr.user.js">여기</a>를 클릭해 자동 스크립트 설치</li>
     <li>크로미움 기반 브라우저일 경우 개발자 모드를 활성화 해야 합니다.<br/>
       <blockquote>
